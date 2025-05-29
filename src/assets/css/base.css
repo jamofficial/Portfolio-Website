@@ -1,0 +1,210 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import "tailwindcss";
+
+:root {
+  --color-dominant: #f0e6d2;
+  --color-secondary: #2f4858;
+  --color-accent: #73503c;
+
+  --bg-primary: var(--color-dominant);
+  --text-body-primary: #012523;
+  --text-body-secondary: #f0e6d2;
+}
+
+@theme {
+  /* ====== PERFECT FOURTH SCALE (1.333 RATIO) - BASE 16PX ====== */
+
+  /* Extra Small Text (9px) - 12px ÷ 1.333 */
+  --text-xs: 0.563rem;
+  --text-xs--line-height: 0.938rem;
+  --text-xs--letter-spacing: 0.02em;
+  --text-xs--font-weight: 400;
+
+  /* Small Text (12px) - 16px ÷ 1.333 */
+  --text-sm: 0.75rem;
+  --text-sm--line-height: 1.2rem;
+  --text-sm--letter-spacing: 0.01em;
+  --text-sm--font-weight: 400;
+
+  /* Base Text (16px) - Foundation */
+  --text-base: 1rem;
+  --text-base--line-height: 1.5rem;
+  --text-base--letter-spacing: 0;
+  --text-base--font-weight: 400;
+
+  /* Large Text (21.33px) - 16px × 1.333 */
+  --text-lg: 1.333rem;
+  --text-lg--line-height: 1.867rem;
+  --text-lg--letter-spacing: -0.01em;
+  --text-lg--font-weight: 400;
+
+  /* Extra Large Text (28.44px) - 21.33px × 1.333 */
+  --text-xl: 1.778rem;
+  --text-xl--line-height: 2.4rem;
+  --text-xl--letter-spacing: -0.01em;
+  --text-xl--font-weight: 400;
+
+  /* 2XL Text (37.93px) - 28.44px × 1.333 */
+  --text-2xl: 2.37rem;
+  --text-2xl--line-height: 3.081rem;
+  --text-2xl--letter-spacing: -0.01em;
+  --text-2xl--font-weight: 400;
+
+  /* 3XL Text (50.57px) - 37.93px × 1.333 */
+  --text-3xl: 3.16rem;
+  --text-3xl--line-height: 3.95rem;
+  --text-3xl--letter-spacing: -0.02em;
+  --text-3xl--font-weight: 400;
+
+  /* 4XL Text (67.43px) - 50.57px × 1.333 */
+  --text-4xl: 4.214rem;
+  --text-4xl--line-height: 5.057rem;
+  --text-4xl--letter-spacing: -0.02em;
+  --text-4xl--font-weight: 400;
+
+  /* 5XL Text (89.91px) - 67.43px × 1.333 */
+  --text-5xl: 5.619rem;
+  --text-5xl--line-height: 6.462rem;
+  --text-5xl--letter-spacing: -0.03em;
+  --text-5xl--font-weight: 400;
+
+  /* 6XL Text (119.88px) - 89.91px × 1.333 */
+  --text-6xl: 7.493rem;
+  --text-6xl--line-height: 8.242rem;
+  --text-6xl--letter-spacing: -0.03em;
+  --text-6xl--font-weight: 400;
+
+  /* 7XL Text (159.84px) - 119.88px × 1.333 */
+  --text-7xl: 9.99rem;
+  --text-7xl--line-height: 10.489rem;
+  --text-7xl--letter-spacing: -0.04em;
+  --text-7xl--font-weight: 400;
+
+  /* 8XL Text (213.12px) - 159.84px × 1.333 */
+  --text-8xl: 13.32rem;
+  --text-8xl--line-height: 13.32rem;
+  --text-8xl--letter-spacing: -0.04em;
+  --text-8xl--font-weight: 400;
+
+  /* 9XL Text (284.16px) - 213.12px × 1.333 */
+  --text-9xl: 17.76rem;
+  --text-9xl--line-height: 16.872rem;
+  --text-9xl--letter-spacing: -0.05em;
+  --text-9xl--font-weight: 400;
+
+  /* ====== HEADING STYLES - PERFECT FOURTH SCALE ====== */
+
+  /* H6 (16px) - Same as base */
+  --text-h6: 1rem;
+  --text-h6--line-height: 1.4rem;
+  --text-h6--letter-spacing: 0.01em;
+  --text-h6--font-weight: 600;
+
+  /* H5 (21.33px) - 16px × 1.333 */
+  --text-h5: 1.333rem;
+  --text-h5--line-height: 1.8rem;
+  --text-h5--letter-spacing: 0;
+  --text-h5--font-weight: 600;
+
+  /* H4 (28.44px) - 21.33px × 1.333 */
+  --text-h4: 1.778rem;
+  --text-h4--line-height: 2.311rem;
+  --text-h4--letter-spacing: -0.01em;
+  --text-h4--font-weight: 600;
+
+  /* H3 (37.93px) - 28.44px × 1.333 */
+  --text-h3: 2.37rem;
+  --text-h3--line-height: 2.963rem;
+  --text-h3--letter-spacing: -0.01em;
+  --text-h3--font-weight: 600;
+
+  /* H2 (50.57px) - 37.93px × 1.333 */
+  --text-h2: 3.16rem;
+  --text-h2--line-height: 3.792rem;
+  --text-h2--letter-spacing: -0.02em;
+  --text-h2--font-weight: 700;
+
+  /* H1 (67.43px) - 50.57px × 1.333 */
+  --text-h1: 4.214rem;
+  --text-h1--line-height: 4.846rem;
+  --text-h1--letter-spacing: -0.02em;
+  --text-h1--font-weight: 700;
+
+  /* ====== DESKTOP HEADING VARIANTS (NEXT STEP UP) ====== */
+
+  /* H6 Desktop (21.33px) */
+  --text-h6-lg: 1.333rem;
+  --text-h6-lg--line-height: 1.8rem;
+  --text-h6-lg--letter-spacing: 0;
+  --text-h6-lg--font-weight: 600;
+
+  /* H5 Desktop (28.44px) */
+  --text-h5-lg: 1.778rem;
+  --text-h5-lg--line-height: 2.311rem;
+  --text-h5-lg--letter-spacing: -0.01em;
+  --text-h5-lg--font-weight: 600;
+
+  /* H4 Desktop (37.93px) */
+  --text-h4-lg: 2.37rem;
+  --text-h4-lg--line-height: 2.963rem;
+  --text-h4-lg--letter-spacing: -0.01em;
+  --text-h4-lg--font-weight: 600;
+
+  /* H3 Desktop (50.57px) */
+  --text-h3-lg: 3.16rem;
+  --text-h3-lg--line-height: 3.792rem;
+  --text-h3-lg--letter-spacing: -0.02em;
+  --text-h3-lg--font-weight: 600;
+
+  /* H2 Desktop (67.43px) */
+  --text-h2-lg: 4.214rem;
+  --text-h2-lg--line-height: 4.846rem;
+  --text-h2-lg--letter-spacing: -0.02em;
+  --text-h2-lg--font-weight: 700;
+
+  /* H1 Desktop (89.91px) - 67.43px × 1.333 */
+  --text-h1-lg: 5.619rem;
+  --text-h1-lg--line-height: 6.181rem;
+  --text-h1-lg--letter-spacing: -0.03em;
+  --text-h1-lg--font-weight: 700;
+
+  /* ====== DISPLAY SIZES FOR HERO SECTIONS ====== */
+
+  /* Display Small (119.88px) - 89.91px × 1.333 */
+  --text-display-sm: 7.493rem;
+  --text-display-sm--line-height: 7.868rem;
+  --text-display-sm--letter-spacing: -0.03em;
+  --text-display-sm--font-weight: 700;
+
+  /* Display Medium (159.84px) - 119.88px × 1.333 */
+  --text-display-md: 9.99rem;
+  --text-display-md--line-height: 9.99rem;
+  --text-display-md--letter-spacing: -0.04em;
+  --text-display-md--font-weight: 700;
+
+  /* Display Large (213.12px) - 159.84px × 1.333 */
+  --text-display-lg: 13.32rem;
+  --text-display-lg--line-height: 12.654rem;
+  --text-display-lg--letter-spacing: -0.04em;
+  --text-display-lg--font-weight: 800;
+
+  --font-display: "Roboto Mono", monospace;
+  --font-body: "Merriweather Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text-body-primary);
+  background: var(--bg-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}

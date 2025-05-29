@@ -1,0 +1,9 @@
+@import './base.css';
+
+@media (min-width: 767) {
+  body {
+  }
+
+  #app {
+  }
+}
