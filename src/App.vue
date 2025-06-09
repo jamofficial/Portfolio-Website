@@ -55,7 +55,7 @@ watchEffect(async () => {
         <Button
           name="WakaTime"
           btn_type="ghost"
-          url="https://wakatime.com/@jamofficial"
+          url="https://wakatime.com/@jhaimecando"
         />
         <Button
           name="GitHub"
